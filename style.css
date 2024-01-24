@@ -8,6 +8,7 @@
     background-image: linear-gradient(to bottom, purple, rgb(206, 20, 91), rgb(248, 193, 11));
     background-size: cover;
     background-position: top center;
+    
   }
   .app-wrap {
     display: flex;

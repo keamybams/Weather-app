@@ -44,6 +44,12 @@ function displayResults(weather) {
         weather_el.innerText = weather.weather[0].main;
         let hilow = document.querySelector(".hi-low");
         hilow.innerText = `${weather.main.temp_min}°C / ${weather.main.temp_max}°C`;
+
+        if (weather.main.temp < 10) {
+          document.body.style.backgroundImage = 'linear-gradient(to bottom, navy, rgb(0, 204, 255), rgb(230, 255, 255';
+        } else {
+          document.body.style.backgroundImage = '';
+        }
       }
       function dateBuilder(d) {
         let months = [
@@ -75,3 +81,6 @@ function displayResults(weather) {
         let year = d.getFullYear();
         return `${day} ${date} ${month} ${year}`;
 }
+
+
+
